@@ -1,0 +1,10 @@
+*.epub
+*.xhtml
+*.txt
+*.opf
+*.jpg
+*.css
+*.ncx
+mimetype
+
+META-INF/
