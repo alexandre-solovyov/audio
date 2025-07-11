@@ -17,4 +17,4 @@ out/%.wav: out/%.txt
 	cat $< | ~/piper/piper --model ~/piper/ru_RU-irina-medium.onnx --output-file $@
 
 res/%.mp3: out/%.wav
-	ffmpeg -i $< -vn -ar 44100 -ac 2 -b:a $(rate)k -af atempo=$(temp) $@
+	ffmpeg -i $< -vn -ar 22050 -ac 2 -b:a $(rate)k -af atempo=$(temp) $@
